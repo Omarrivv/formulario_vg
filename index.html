@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De ContraseñAS login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-content">
+                <div class="form-image">
+                    <img src="/img/Logo-VG_Tpt02.png" alt="">
+                </div>
+                <div class="form-fields">
+                    <h2>BIENVENIDOS</h2>
+                    <input type="radio" name="interes" value="analisis-sistema" required> Analisis de Sistema
+                    <input type="radio" name="interes" value="producto-agraria" required> Producción Agraria
+                </div>
+                <div class="flex-container">
+                    <input type="text" id="Nombres" name="Nombres" placeholder="Nombres" pattern="[A-Za-z\s]+" required>
+                    <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos" pattern="[A-Za-z\s]+" required>
+                    <input type="number" id="Edad" name="Edad" placeholder="Edad" min="0" required>
+                    <input type="email" id="email" name="email" placeholder="email" required pattern="[\w\.-]+@[\w\.-]+" title="Ingrese una dirección de correo electrónico válida">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <a href="#">¿Olvidó su contraseña?</a>
+                    <input type="checkbox" name="interes" value="aceptar" required>Aceptar la política de privacidad y los términos y condiciones
+                    <input type="submit" value="REGISTRAR">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
